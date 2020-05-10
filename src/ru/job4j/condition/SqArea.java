@@ -13,6 +13,8 @@ public class SqArea {
         int k = 2;
         double result1 = SqArea.square(p, k);
         System.out.println(" Square with parameters " +  p + " and " +  k + " equal is " + result1);
+        System.out.println(" The formula for calculate square  is S=(p/(2*(k+1))^2)*k");
+
     }
 
 

@@ -23,6 +23,17 @@ public class Point {
        int y2 = 0;
        double result = Point.distance(x1, y1, x2, y2);
        System.out.println("distance from " + "(" + x1 + "," + y1 + ") to (" + x2 + "," + y2 + ") is " + result);
+
+       // Тест кода проверки расстояния
+       int inx1 = 1;
+       int iny1 = 4;
+       int inx2 = 2;
+       int iny2 = 0;
+       double expected = 4.123;
+       double out = distance(inx1, iny1, inx2, iny2);
+       boolean passed = expected == out;
+       System.out.println("The distance between two points with coordinates " + "(" + inx1 + "," + iny1 + "), (" + inx2 + "," + iny2 + ") is " + expected + ". Test result:  " + passed);
+
    }
 
 }

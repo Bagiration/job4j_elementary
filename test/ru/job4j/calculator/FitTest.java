@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import ru.job4j.converter.Converter;
 
-public class FitTest {
+public class FitTest  {
 
     @Test
     public void whenHeight170ThenMansWeight80Dot5() {

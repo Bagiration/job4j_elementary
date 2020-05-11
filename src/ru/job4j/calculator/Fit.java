@@ -31,7 +31,7 @@ public class Fit {
         // Тест кода веса женщины
 
         double inwoman = 160;
-        double expectedwoman = 57.4999999;
+        double expectedwoman = 57.49;
         double outwoman = womanWeight(inwoman);
         boolean passedWomansWeight = expectedwoman == outwoman;
         System.out.println("The man's weight is " + inwoman + " kg when his height is " + expectedwoman + ". Test result:  " + passedWomansWeight);

@@ -4,9 +4,10 @@ import org.junit.Test;
 
 import org.junit.Assert;
 
+
 public class SqAreaTest {
 
-    @Test
+   @Test
     public void controlArea() {
         int inp = 6;
         int ink = 2;

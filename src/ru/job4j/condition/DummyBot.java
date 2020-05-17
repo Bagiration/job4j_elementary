@@ -4,12 +4,13 @@ package ru.job4j.condition;
 
 public class DummyBot {
 
+
     public static String answer(String quastion) {
         String rs1 = "Привет, умник.";
         String rs2 = "До скорой встречи.";
         String rs3 = "Это ставит меня в тупик. Задайте другой вопрос.";
        // String rs4 = "временно";
-        String rs4 ;
+        String rs4;
         if ("Привет, Бот.".equals(quastion)) {
             rs4 = rs1;
         } else if ("Пока.".equals(quastion)) {

@@ -9,7 +9,7 @@ public class DummyBot {
         String rs1 = "Привет, умник.";
         String rs2 = "До скорой встречи.";
         String rs3 = "Это ставит меня в тупик. Задайте другой вопрос.";
-       // String rs4 = "временно";
+        // String rs4 = "временно";
         String rs4;
         if ("Привет, Бот.".equals(quastion)) {
             rs4 = rs1;

@@ -1,5 +1,6 @@
 package ru.job4j.condition;
 //4.5. Отладка программы в IDEA [#285257]
+
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
 
@@ -21,7 +22,7 @@ public class ThreeMaxTest {
 
     @Test
     public void thirdMax() {
-        int rsl = ThreeMax.max(1, 5, 100) ;
+        int rsl = ThreeMax.max(1, 5, 100);
         assertThat(rsl, is(100));
     }
 

@@ -4,8 +4,8 @@ package ru.job4j.condition;
 
 public class DummyBot {
 
-
-    public static String answer(String quastion) {
+//Старый вариант
+  /*  public static String answer(String quastion) {
         String rs1 = "Привет, умник.";
         String rs2 = "До скорой встречи.";
         String rs3 = "Это ставит меня в тупик. Задайте другой вопрос.";
@@ -19,8 +19,18 @@ public class DummyBot {
             rs4 = rs3;
         }
         return rs4;
-    }
+    }*/
 
+    // Переработанный код
+    public static String answer(String quastion) {
+        String rs1 = "Это ставит меня в тупик. Задайте другой вопрос.";
+        if ("Привет, Бот.".equals(quastion)) {
+            rs1 = "Привет, умник.";
+        } else if ("Пока.".equals(quastion)) {
+            rs1 = "До скорой встречи.";
+        }
+        return rs1;
+    }
 
     public static void main(String[] args) {
         String myQuastion = "Пока.";

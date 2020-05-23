@@ -2,13 +2,24 @@ package ru.job4j.converter;
 
 /**
  * Class Класс для перевода курса валюты рубль на иностранную валюту (евро или доллар)
+ * @author Bagrat Paronyan
  */
 public class Converter {
+    /**
+     *
+     * @param value количество рублей, по которым нужно узнать эквивалентную сумму денег в иностранной валюте в евро
+     * @return результат (эквивалентная сумма денег в евро)
+     */
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
         return rsl;
     }
 
+    /**
+     *
+     * @param value количество рублей, по которым нужно узнать эквивалентную сумму денег в иностранной валюте в долларах
+     * @return результат (эквивалентная сумма денег в доллорах)
+     */
     public static int rubleToDollar(int value) {
         int rsl = value / 60; // формула перевода рублей в доллоры.
         return rsl;

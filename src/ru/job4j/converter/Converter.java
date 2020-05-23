@@ -1,5 +1,8 @@
 package ru.job4j.converter;
 
+/**
+ * Class Класс для перевода курса валюты рубль на иностранную валюту (евро или доллар)
+ */
 public class Converter {
     public static int rubleToEuro(int value) {
         int rsl = value / 70;

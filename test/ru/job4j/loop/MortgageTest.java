@@ -1,7 +1,7 @@
 package ru.job4j.loop;
 
 //5.7. Ипотека.
-
+//
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;

@@ -1,6 +1,6 @@
 package ru.job4j.loop;
 
-//5.7. Ипотека. [#285345]
+//5.7. Ипотека.
 
 import org.junit.Test;
 

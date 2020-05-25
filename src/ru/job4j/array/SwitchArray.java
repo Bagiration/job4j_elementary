@@ -1,8 +1,17 @@
 package ru.job4j.array;
 
 //6.2.1. Выход за границу массива.
+//6.2.2. Переставить элементы массива
 
 public class SwitchArray {
+
+    public static int[] swap(int[] array, int source, int dest) {
+        int temp = array[source];
+        array[source] = array[dest];
+        array[dest] = temp;
+        return array;
+    }
+
 
     public static int[] swapBorder(int[] array) {
         int temp = array[0];

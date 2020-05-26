@@ -5,14 +5,23 @@ package ru.job4j.array;
 public class Check {
     public static boolean mono(boolean[] data) {
         boolean result = true;
-                for (int i = 0; i < data.length; i++) {
+               /*
+               // старый код
+               for (int i = 0; i < data.length; i++) {
                     boolean model = data[0];
                      if (model == data[i]) {
                      } else {
                         result = false;
                         break;
-                    }
-                }
+                    */
+        // новый код
+        for (int i = 0; i < data.length; i++) {
+            boolean model = data[0];
+            if (model != data[i]) {
+                result = false;
+                break;
+            }
+        }
         return result;
     }
 }

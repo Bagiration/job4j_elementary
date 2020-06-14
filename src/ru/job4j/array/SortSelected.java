@@ -15,10 +15,15 @@ public class SortSelected {
 
             //блок без временной переменной
 
-            if (i != index) {
+           /* if (i != index) {
                 data[i] = data[i] + data[index];
                 data[index] = data[i] - data[index];
                 data[i] = data[i] - data[index];
+            }*/
+
+            if (i != index) {
+                data[index] = data[i];
+                data[i] = min;
             }
         }
         return data;

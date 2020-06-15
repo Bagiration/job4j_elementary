@@ -3,7 +3,7 @@ package ru.job4j.array;
 //6.7.1. Моно строка в матрице
 //6.7.2. Моно столбец в матрице
 //6.7.3. Массив из диагонали матрицы
-
+//6.7.4. Выигрышные комбинации в сокобан
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
@@ -34,4 +34,18 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][i] == 'X') {
+                if (monoHorizontal(board, i) == true || monoVertical(board, i) == true) {
+                    result = true;
+                    break;
+                }
+            }
+        }
+        return result;
+    }
+
 }

@@ -22,9 +22,7 @@ public class Merge {
     public static int[] newMerge(int[] a, int[] b) {
         int ia, ib;
         ia = ib = 0;
-        int k = ia + ib;
         int[] rsl = new int[a.length + b.length];
-
         while (ia + ib < a.length + b.length) {
             if (ia == a.length) {
                 rsl[ia + ib] = b[ib];
@@ -145,9 +143,9 @@ public static void main(String[] args) {
     }
 */
 
-    //дальше идёт код с комбинировынным кодом в одном методе, впринципе всё тоже самое//
+//дальше идёт код с комбинировынным кодом в одном методе, впринципе всё тоже самое//
 
-    //тест с выводом на консоль
+//тест с выводом на консоль
 /*public static void main(String[] args) {
         int[] n = {};
         int[] v = {45, 200, 10000};

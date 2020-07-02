@@ -8,6 +8,53 @@ public class Merge {
 
     //тест через вывод на консоль
     public static void main(String[] args) {
+        int[] a = {2, 10, 25};
+        int[] b = {3, 5, 12, 10000};
+        int lenght = a.length + b.length;
+        //if (a[0] >= b[b.length - 1] || b[0] >= a[a.length - 1]) {
+        int[] result = newMerge(a, b);
+        for (int i = 0; i < lenght; i++) {
+            System.out.print(result[i] + " ");
+
+        }
+    }
+
+    public static int[] newMerge(int[] a, int[] b) {
+        int ia, ib;
+        ia = ib = 0;
+        int k = ia + ib;
+        int[] rsl = new int[a.length + b.length];
+
+        while (ia + ib < a.length + b.length) {
+            if (ia == a.length) {
+                rsl[ia + ib] = b[ib];
+                ib++;
+            } else {
+                if (ib == b.length) {
+                    rsl[ia + ib] = a[ia];
+                    ia++;
+                } else {
+                    if (a[ia] < b[ib]) {
+                        rsl[ia + ib] = a[ia];
+                        ia++;
+                    } else {
+                        rsl[ia + ib] = b[ib];
+                        ib++;
+
+                    }
+                }
+            }
+        }
+        return rsl;
+    }
+}
+
+
+
+
+/* это всё старый код
+
+public static void main(String[] args) {
         int[] a = {};
         int[] b = {5200, 10000};
         int lenght = a.length + b.length;
@@ -23,7 +70,6 @@ public class Merge {
             }
         }
     }
-
 
     //метод для юнит - теста
     public static int[] forTest(int[] a, int[] b) {
@@ -66,6 +112,8 @@ public class Merge {
         return newArray;
     }
 
+
+
     // универсальный метод подбора возрастающих массивов
     public static int[] universalMerge(int[] a, int[] b) {
         int bi = 0;                                                               //O(1)
@@ -95,7 +143,7 @@ public class Merge {
         }
         return rsl;
     }
-
+*/
 
     //дальше идёт код с комбинировынным кодом в одном методе, впринципе всё тоже самое//
 
@@ -170,8 +218,8 @@ public class Merge {
         }
         return rsl;
     }
-   */
-}
 
+}
+*/
 
 

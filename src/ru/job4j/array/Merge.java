@@ -15,13 +15,13 @@ public class Merge {
         int[] result = newMerge(a, b);
         for (int i = 0; i < lenght; i++) {
             System.out.print(result[i] + " ");
-
         }
     }
 
     public static int[] newMerge(int[] a, int[] b) {
         int ia, ib;
-        ia = ib = 0;
+        ia = 0;
+        ib = 0;
         int[] rsl = new int[a.length + b.length];
         while (ia + ib < a.length + b.length) {
             if (ia == a.length) {

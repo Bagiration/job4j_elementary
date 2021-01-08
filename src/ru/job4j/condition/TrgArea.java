@@ -12,7 +12,4 @@ public class TrgArea {
         double resalt = TrgArea.area(2, 2, 2);
         System.out.println("area (2, 2, 2) = " + resalt);
     }
-
-
-
 }

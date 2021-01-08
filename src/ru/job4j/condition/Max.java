@@ -9,8 +9,7 @@ public class Max {
     }
 
     public static void main(String[] args) {
-
-        int msg = max(20, 20);
+        int msg = max(21, 22);
         System.out.println(msg);
     }
 }

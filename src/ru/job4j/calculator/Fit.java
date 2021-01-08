@@ -7,7 +7,6 @@ public class Fit {
         return rsl;
     }
 
-
     public static double womanWeight(double height) {
         double rsl = (height - 110) * 1.15;
         return rsl;
@@ -29,7 +28,6 @@ public class Fit {
         System.out.println("The man's weight is " + inMan + " kg when his height is " + expectedMan + ". Test result:  " + passedMansWeight);
 
         // Тест кода веса женщины
-
         double inwoman = 160;
         double expectedwoman = 57.49;
         double outwoman = womanWeight(inwoman);

@@ -8,13 +8,5 @@ public class MathFunc {
     }
         public static void main(String[] args) {
           int result = MathFunc.func1(100);
-        //int result2 = MathFunc.func2(5);
-        //int total = result1 + result2;
-        //System.out.println(total);
-/*public static void func2(int l) {
-        int p = l *10;
-        System.out.println(p);
-    }
-*/
     }
 }
